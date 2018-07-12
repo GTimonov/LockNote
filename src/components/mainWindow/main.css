@@ -1,0 +1,8 @@
+.main {
+    min-height: 100px;
+    background-color: rgb(87, 101, 116);
+}
+.main h1{
+    margin: 0;
+    color: white;
+}
