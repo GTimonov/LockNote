@@ -4,22 +4,11 @@
     // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-<<<<<<< HEAD
-
-=======
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}"
-        },
->>>>>>> 7c1a2f46eff0a5bc8b04d17fee24bab2b9bfb583
         {
             "type": "chrome",
             "request": "launch",
             "name": "Запустить Chrome для localhost",
-            "url": "http://localhost:3000",
+            "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }
     ]
