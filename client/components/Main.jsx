@@ -1,3 +1,5 @@
+import TopicsScreen from "../containers/TopicsScreen";
+
 class Main extends React.Component {
     constructor(props){
         super(props);
@@ -6,7 +8,10 @@ class Main extends React.Component {
     
     render() {
         return (
-            <span>first</span> 
+            <div className="App">
+                 <TopicsScreen/>
+            </div>
+           
         );
     }
 }
