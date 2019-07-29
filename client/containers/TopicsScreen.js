@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class TopicsScreen extends React.Component {
   render() {
     return (
-      <h2>Where are my topics?</h2>
+      <h2></h2>
     );
   }
 }

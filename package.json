@@ -7,10 +7,9 @@
     "example": "examples"
   },
   "scripts": {
-    "start": "webpack-dev-server --open  --config webpack.dev.js",
-    "build": "webpack --display-modules --config webpack.prod.js ",
-    "lti": "webpack --env.TEST_MODE=false --env.PROVIDER=LTI --display-modules --config webpack.prod.js --progress",
-    "test": "test"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --display-modules --env.TEST_SERVER=false --config webpack.prod.js ",
+   "test": "test"
   },
   "repository": {
     "type": "git",

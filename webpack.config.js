@@ -2,22 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env) => {
-    let STUDENT_MODE = 'true';
-    let TEST_MODE = 'true';
-    let PROVIDER = 'LTI';
-
-    if (env){
-        if (env.STUDENT_MODE)
-            STUDENT_MODE = env.STUDENT_MODE;
-        if (env.TEST_MODE)
-            TEST_MODE = env.TEST_MODE;
-        if (env.PROVIDER)
-            PROVIDER = env.PROVIDER;
-    }
-  
-    console.log('STUDENT_MODE : '+ STUDENT_MODE);
-    console.log('TEST_MODE : '+ TEST_MODE);
-    console.log('PROVIDER : '+ PROVIDER);
+    let TEST_SERVER = 'true';
 
     return {
         entry: [
@@ -96,9 +81,7 @@ module.exports = (env) => {
                 React: 'react',
             }),
             new webpack.EnvironmentPlugin({
-                TEST_MODE: TEST_MODE,
-                STUDENT_MODE: STUDENT_MODE,
-                PROVIDER: PROVIDER
+                TEST_SERVER: TEST_SERVER,
             }),
             new webpack.HotModuleReplacementPlugin()
         ]

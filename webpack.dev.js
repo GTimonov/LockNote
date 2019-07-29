@@ -9,6 +9,6 @@ module.exports = (env) => merge(common(env), {
             hot: true,
             noInfo: true,
             contentBase: path.join(__dirname, 'public'),
-            host: '0.0.0.0'
+            //host: '0.0.0.0'
         },
 });
