@@ -2,6 +2,7 @@ import TopicsScreen from "../../containers/TopicsScreen";
 import CreateNote from "../CreateNote/CreateNote";
 
 import './styles.scss';
+import {Route} from 'react-router-dom'
 
 export default class App extends React.Component {
     constructor(props){
@@ -15,8 +16,11 @@ export default class App extends React.Component {
                 <div className="header">
                     <h1>Lock Note</h1>
                 </div>
+                <Route path='create'>
+                    <CreateNote/>
+                </Route>
                  <TopicsScreen/>
-                 <CreateNote/>
+                 
             </div>
            
         );
