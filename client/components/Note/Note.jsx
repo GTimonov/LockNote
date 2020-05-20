@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react'
+import Button from '@material-ui/core/Button'
 
-class Note extends Component {
-   render() {
-      return (
-         <div>
-            sdfsdf
-         </div>
-      );
-   }
+function Note() {
+    return (
+        <div>
+            <Button variant="contained" color="primary">
+                Add Note
+            </Button>
+        </div>
+    )
 }
 
-export default Note;
+export default Note
